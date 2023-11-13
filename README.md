@@ -2,7 +2,9 @@
 
 ## Nvidia Acknowledgements
 
-We are grateful to Nvidia for awarding us a teaching grant (for the PMPH and DPP courses) that consists of two A100 GPUs. These are now accessible on the server futharkhpa03fl.unicph.domain
+We are grateful to Nvidia for awarding us a teaching grant (for the
+PMPH and DPP courses) that consists of two A100 GPUs. These are now
+accessible on the server futharkhpa03fl.unicph.domain
 
 
 ## Course Structure
@@ -143,16 +145,12 @@ following hosts:
 
 * `futharkhpa01fl.unicph.domain`
 
-* `futharkhpa02fl.unicph.domain`
-
 * `futharkhpa03fl.unicph.domain`
 
 Log in with your usual KU login information.
 
-All machines should have all the software installed you need.  If you
-are missing something, [contact Troels](mailto:athas@sigkill.dk).  The
-first and last machine has NVIDIA A100 GPUs, and the second machine
-has an AMD MI100 GPU.
+All machines should have all the software installed you need, and
+otherwise see below. The machines are equipped with NVIDIA A100 GPUs.
 
 Consider using
 [sshfs](https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh)
@@ -163,14 +161,25 @@ $ mkdir remote
 $ sshfs futharkhpa01fl.unicph.domain: remote
 ```
 
-### GPU setup
+### Software setup
 
-For CUDA to work, you may need to add the following to your `$HOME/.bash_profile`:
+The DIKU systems have a [conventional HPC modules
+setup](https://hpc-wiki.info/hpc/Modules), meaning you can make
+additional software available with the ``module`` command.
+
+#### Loading CUDA
 
 ```bash
-export CPATH=/opt/rocm/opencl/include:/usr/local/cuda/include:$CPATH
-export LIBRARY_PATH=/opt/rocm/opencl/lib:/usr/local/cuda/lib64:$LIBRARY_PATH
-export LD_LIBRARY_PATH=/opt/rocm/opencl/lib:/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+$ module load cuda/11.8
+```
+
+(Note that plain `module load cuda` will not work on the Futhark
+machines.)
+
+#### Loading Futhark
+
+```bash
+$ module load futhark
 ```
 
 ## Other resources
