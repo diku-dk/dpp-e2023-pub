@@ -59,10 +59,10 @@ up to the lab sessions.
 | 20/11 | 15:00-17:00 | Lab | [Futhark exercises](bootstrap-exercises.md) | |
 | 22/11 | 10:00-12:00 | [Cost models, advanced Futhark](slides/L2-advanced-futhark-cost-models.pdf) | [Guy Blelloch: Programming Parallel Algorithms](material/blelloch-programming-parallel-algorithms.pdf), [Prefix Sums and Their Applications](material/prefix-sums-and-their-applications.pdf), [A Provable Time and Space Efficient Implementation of NESL](material/a-provable-time-and-space-efficient-implementation-of-nesl.pdf) |
 | 22/11 | 13:00-15:00 | Lab ([**Assignment 1 handout**](weekly-1/)) | |
-| 27/11 | 13:00-15:00 | [List homomorphisms](slides/L3-list-homomorphisms.pdf) | [The Third Homomorphism Theorem](material/algorithms/lhomo-third-theorem.pdf), [Construction of List Homomorphisms by Tupling and Fusion](material/algorithms/lhomo-tupling.pdf) |
+| 27/11 | 10:00-12:00 | [Vector programming with ISPC](slides/L3-ispc.pdf) | [ispc: A SPMD Compiler for High-Performance CPU Programming](material/ispc_inpar_2012.pdf) | |
 | 27/11 | 15:00-17:00 | Lab | |
-| 29/11 | 10:00-12:00 | [Vector programming with ISPC](slides/L4-ispc.pdf) | [ispc: A SPMD Compiler for High-Performance CPU Programming](material/ispc_inpar_2012.pdf) | |
 | 29/12 | 13:00-15:00 | Lab ([**Assignment 2 handout**](weekly-2/)) | |
+| 29/11 | 13:00-15:00 | TBA | TBA |
 | 04/12 | 13:00-15:00 | [Full/irregular flattening](slides/L5-irreg-flattening.pdf) | [PMPH lecture notes, Chapter 4](material/flattening/lecture-notes-pmph.pdf), [Transforming High-Level Data-Parallel Programs into Vector Operations](material/flattening/NeslFlatTechPaper.pdf), [Harnessing the Multicores: Nested Data Parallelism in Haskell](material/flattening/harnessing-multicores.pdf) (not easy to read)|
 | 04/12 | 15:00-17:00 | Lab | |
 | 06/12 | 10:00-12:00 | [Full/irregular flattening](slides/L5-irreg-flattening.pdf) | [PMPH lecture notes, Chapter 4](material/flattening/lecture-notes-pmph.pdf), [Transforming High-Level Data-Parallel Programs into Vector Operations](material/flattening/NeslFlatTechPaper.pdf), [Harnessing the Multicores: Nested Data Parallelism in Haskell](material/flattening/harnessing-multicores.pdf) (not easy to read)|
@@ -176,6 +176,8 @@ $ module load futhark
 $ module load ispc
 ```
 
+(Although there is no reason to use Hendrix for ISPC - it will run
+fine on your machine.)
 
 ## Other resources
 
