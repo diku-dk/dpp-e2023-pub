@@ -133,24 +133,11 @@ group will answer individual questions for about 10 min.
 ## Practical information
 
 You may find it useful to make use of DIKUs GPU machines in your work.
-
-To connect you need one of the following:
-
-* Be [connected to the KU VPN](https://github.com/diku-dk/howto/blob/main/vpn.md)
-
-* Be physically connected to the *wired network* at DIKU.
-
-Once this is done, you can access the GPU machines by SSH'ing to the
-following hosts:
-
-* `futharkhpa01fl.unicph.domain`
-
-* `futharkhpa03fl.unicph.domain`
-
-Log in with your usual KU login information.
-
-All machines should have all the software installed you need, and
-otherwise see below. The machines are equipped with NVIDIA A100 GPUs.
+We recommend using the so-called [Hendrix
+cluster](https://diku-dk.github.io/wiki/slurm-cluster#getting-access).
+If you are enrolled in the course, you should already have access.
+Otherwise contact Troels at <athas@sigkill.dk>. For how to access
+Hendrix, follow the first link in this paragraph.
 
 Consider using
 [sshfs](https://www.digitalocean.com/community/tutorials/how-to-use-sshfs-to-mount-remote-file-systems-over-ssh)
@@ -158,29 +145,37 @@ to mount the remote file system on your local machine:
 
 ```
 $ mkdir remote
-$ sshfs futharkhpa01fl.unicph.domain: remote
+$ sshfs hendrix:/ remote
 ```
 
-### Software setup
+[Also see here for more
+hints.](https://github.com/diku-dk/howto/blob/main/servers.md#the-hendrix-cluster)
+
+### Using Hendrix
 
 The DIKU systems have a [conventional HPC modules
 setup](https://hpc-wiki.info/hpc/Modules), meaning you can make
-additional software available with the ``module`` command.
+additional software available with the ``module`` command. You may
+need to do this inside SLURM jobs.
 
 #### Loading CUDA
 
 ```bash
-$ module load cuda/11.8
+$ module load cuda
 ```
-
-(Note that plain `module load cuda` will not work on the Futhark
-machines.)
 
 #### Loading Futhark
 
 ```bash
 $ module load futhark
 ```
+
+#### Loading ISPC
+
+```bash
+$ module load ispc
+```
+
 
 ## Other resources
 
