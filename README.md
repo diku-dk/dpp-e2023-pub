@@ -62,7 +62,7 @@ up to the lab sessions.
 | 27/11 | 10:00-12:00 | [Vector programming with ISPC](slides/L3-ispc.pdf) | [ispc: A SPMD Compiler for High-Performance CPU Programming](material/ispc_inpar_2012.pdf) | |
 | 27/11 | 15:00-17:00 | Lab | |
 | 29/12 | 13:00-15:00 | Lab ([**Assignment 2 handout**](weekly-2/)) | |
-| 29/11 | 13:00-15:00 | Pointer Structures | [The Complexity of Parallel Computations](material/wyllie.pdf) (section 4.1.2), [Aaron Hsu's PhD dissertation](material/hsu_dissertation.pdf) (sections 3.2 and 3.3, but the lecture slides should be enough). |
+| 29/11 | 13:00-15:00 | [Pointer Structures](slides/L4-pointer-structures.pdf) | [The Complexity of Parallel Computations](material/wyllie.pdf) (section 4.1.2), [Aaron Hsu's PhD dissertation](material/hsu_dissertation.pdf) (sections 3.2 and 3.3, but the lecture slides should be enough). |
 | 04/12 | 13:00-15:00 | [Full/irregular flattening](slides/L5-irreg-flattening.pdf) | [PMPH lecture notes, Chapter 4](material/flattening/lecture-notes-pmph.pdf), [Transforming High-Level Data-Parallel Programs into Vector Operations](material/flattening/NeslFlatTechPaper.pdf), [Harnessing the Multicores: Nested Data Parallelism in Haskell](material/flattening/harnessing-multicores.pdf) (not easy to read)|
 | 04/12 | 15:00-17:00 | Lab | |
 | 06/12 | 10:00-12:00 | [Full/irregular flattening](slides/L5-irreg-flattening.pdf) | [PMPH lecture notes, Chapter 4](material/flattening/lecture-notes-pmph.pdf), [Transforming High-Level Data-Parallel Programs into Vector Operations](material/flattening/NeslFlatTechPaper.pdf), [Harnessing the Multicores: Nested Data Parallelism in Haskell](material/flattening/harnessing-multicores.pdf) (not easy to read)|
