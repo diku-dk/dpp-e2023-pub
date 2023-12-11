@@ -34,7 +34,7 @@ print(Dep);
 
 #Inew = isl.UnionSet("[N] -> {S1[p,q]: 2<=p<2*N-1 and max(1,p-N+1)<=q<min((p+2)/2 + (p mod 2), N)}")
 Snew = isl.UnionMap("[N] -> {S1[x,q] -> [x+q,q]}").intersect_domain(I)
-#Snew = isl.UnionMap("[N] -> {S1[x,q] -> [x+q,1]}").intersect_domain(Inew)
+#Snew = isl.UnionMap("[N] -> {S1[x,q] -> [x+q,1]}").intersect_domain(I)
 
 print("New Schedule:");
 print(Snew);
