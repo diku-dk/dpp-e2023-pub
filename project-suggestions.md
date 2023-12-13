@@ -25,13 +25,19 @@ you evaluate its suitability.
 
 The [Problem Based Benchmark
 Suite](https://cmuparlay.github.io/pbbsbench/) is a collection of
-benchmark programs written in parallel C++.  We are interested in
-porting them to a high-level parallel language (e.g. Futhark).  Some
-of the benchmarks are relatively trivial; others are more difficult.
-It might be a good idea for a project to combine a trivial benchmark
-with a more complex one.  The [list of benchmarks is
+benchmark programs written in parallel C++. We are interested in
+porting them to a high-level parallel language (e.g. Futhark). Some of
+the benchmarks are relatively trivial; others are more difficult. It
+might be a good idea for a project to combine a trivial benchmark with
+a more complex one. The [list of benchmarks is
 here](https://cmuparlay.github.io/pbbsbench/benchmarks/index.html).
 The ones listed as *Basic Building Blocks* are all pretty
-straightforward.  Look at the others and pick whatever looks
+straightforward. Look at the others and pick whatever looks
 interesting (but talk to us first - some, e.g. rayCast, involve no
 interesting parallelism, and so are not a good DPP project).
+Particularly interesting to Troels are the ones related to
+computational geometry:
+
+* [delaunayRefine](https://cmuparlay.github.io/pbbsbench/benchmarks/delaunayRefine.html)
+* [delaunayTriangulation](https://cmuparlay.github.io/pbbsbench/benchmarks/delaunayTriangulation.html)
+* [rangeQuery2d](https://cmuparlay.github.io/pbbsbench/benchmarks/rangeQuery2d.html)
