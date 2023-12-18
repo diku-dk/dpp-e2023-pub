@@ -77,10 +77,20 @@ Couple of years ago, a [group of students have tackled the task of implemnting a
 
 However, there is still significant room left for improving the GPU performance of such operations; see for example [some results we have reported recently in this presentation](group-projects/big-num-arith/pres-mycroftfest-bignum.pdf). The presentation also includes references to related work.
 
-The task of this project is to reproduce or to improve on the reported results. We suggest you start with the linked DPP project and then think on how to rewrite the implementation of the target operations in a way that improves the PU performance. Then you should probably discuss your ideas with us, and finally go ahead and strive to derive a very efficient implementation. 
+The task of this project is to reproduce or to improve on the reported results. We suggest you start with the linked DPP project and then think on how to rewrite the implementation of the target operations in a way that improves the GPU performance. Then you should probably discuss your ideas with us, and finally go ahead and strive to derive a very efficient implementation. 
 
-Finally, we advise you stick with addition and multiplication, and only if time remains after you have engineered an efficient implementation, you move to more complex operations such as division.
+Finally, we advise you stick with addition and multiplication until you derive efficient implementations, and only if time remains you move to more complex operations such as division.
 
 ## Project Related to Automatic Differentiation
 
-This 
+[Minpack-2 benchmark](group-projects/Mpack-2/Minpack-2.pdf) consists of a collection of problems that require computation of derivatives. The implementation language is Fortran, and each problem implementation has options for computing the primal (original program), or/and the associated Jacobian (or even Hessian). 
+
+This task refers to porting one (or several) of the Minpack-2 benchmarks to Futhark: you need to translate only "the primal" (i.e., the original function that requires differentiation), and then you may use Futhark's support for automatic differentiation to compute the dense Jacobian/Hessians.
+
+Many of the Minpack-2 primals result in sparse Jacobians or Hessians (i.e., the second-order derivative); hence the last step is to visualize/characterize the sparsity of the differentiated code. [Here is a paper that shows the sparsity of a several applications from Minpack-2](group-projects/Mpack-2/Efficient_Computation_of_Gradients_and_Jacobians_b.pdf)
+
+Bonus: if time permits, you may try to optimize the computation, e.g., by packing in a safe way several unit vectors into a denser representation that contains several one entries.
+
+## Batched Rank-k Search
+
+For those that have not chosen this problem in the PMPH course, you are welcome to solve [the rank-k search problem](group-projects/rank-search-k/Project-RankSearch-k.pdf).
