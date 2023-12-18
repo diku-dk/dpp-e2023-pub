@@ -70,3 +70,17 @@ probably not too difficult to adapt to a data parallel setting. This
 project is about implementing the semisort algorithm in Futhark or
 ISPC (or some other data parallel languages) and evaluating the
 performance.
+
+## Big-Integer Arithmetic in Futhark
+
+Couple of years ago, a [group of students have tackled the task of implemnting addition, multiplication and even division of big integers in Futhark](group-projects/big-num-arith/Topalovici-Nielsen-Oleson-dpp-proj.pdf).
+
+However, there is still significant room left for improving the GPU performance of such operations; see for example [some results we have reported recently in this presentation](group-projects/big-num-arith/pres-mycroftfest-bignum.pdf). The presentation also includes references to related work.
+
+The task of this project is to reproduce or to improve on the reported results. We suggest you start with the linked DPP project and then think on how to rewrite the implementation of the target operations in a way that improves the PU performance. Then you should probably discuss your ideas with us, and finally go ahead and strive to derive a very efficient implementation. 
+
+Finally, we advise you stick with addition and multiplication, and only if time remains after you have engineered an efficient implementation, you move to more complex operations such as division.
+
+## Project Related to Automatic Differentiation
+
+This 
