@@ -89,6 +89,8 @@ This task refers to porting one (or several) of the Minpack-2 benchmarks to Futh
 
 Many of the Minpack-2 primals result in sparse Jacobians or Hessians (i.e., the second-order derivative); hence the last step is to visualize/characterize the sparsity of the differentiated code. [Here is a paper that shows the sparsity of a several applications from Minpack-2](group-projects/Mpack-2/Efficient_Computation_of_Gradients_and_Jacobians_b.pdf)
 
+A "project outside the scope" with the same goal, but which did not reach the visualization goal is available [here](https://futhark-lang.org/student-projects/peter-msc-project.pdf); perhaps you will find it useful at least for the Minpack-2 related information (inside).
+
 Bonus: if time permits, you may try to optimize the computation, e.g., by packing in a safe way several unit vectors into a denser representation that contains several one entries.
 
 ## Batched Rank-k Search
