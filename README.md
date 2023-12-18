@@ -18,7 +18,7 @@ grade, while the exam counts for 60\%.
 The teachers are **Cosmin Oancea** and **Troels Henriksen**.
 
 All lectures and lab sessions will be delivered in English.  The
-assignments and projects will be posted in English, and while you can
+assignments and projects will be posted in English, and while you can  
 chose to hand in solutions in either English or Danish, English is
 preferred.
 
