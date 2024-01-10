@@ -81,6 +81,8 @@ The task of this project is to reproduce or to improve on the reported results. 
 
 Finally, we advise you stick with addition and multiplication until you derive efficient implementations, and only if time remains you move to more complex operations such as division.
 
+A paper presenting division is linked [here](https://arxiv.org/pdf/2304.01753.pdf).
+
 ## Project Related to Automatic Differentiation
 
 [Minpack-2 benchmark](group-projects/Mpack-2/Minpack-2.pdf) consists of a collection of problems that require computation of derivatives. The implementation language is Fortran, and each problem implementation has options for computing the primal (original program), or/and the associated Jacobian (or even Hessian). 
